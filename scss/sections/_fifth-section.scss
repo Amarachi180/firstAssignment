@@ -1,0 +1,35 @@
+@use '../custom' as *;
+
+.fifth-section{
+
+
+    p{
+        display: inline-block;
+        margin-right: .5rem;
+    }
+
+    &--icon{
+        font-size: 1.4rem;
+        color: $black;
+    }
+}
+
+
+.back-to-top{
+    text-decoration: none;
+
+    &--sticky{
+        color: $gray-400;
+        margin-bottom: 5rem;
+        
+    
+        &--btn{
+            margin-right: 0.5rem;
+        }
+    
+        p{
+            display: inline;
+        }
+    }
+}
+

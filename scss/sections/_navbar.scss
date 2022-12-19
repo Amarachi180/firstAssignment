@@ -1,0 +1,77 @@
+@use '../custom' as *;
+
+.menu{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+    max-height: 3.5rem;
+
+
+    @include media-breakpoint-up(md){
+        max-height: 2rem;
+        padding-top: 1.6rem;
+    }
+    
+
+    &--brand{
+        width: 10rem;
+        
+
+        @include media-breakpoint-up(md){
+            // position: relative;
+            width: 10rem;
+            margin-left: 1.9rem;
+            padding-right: 0;
+        }
+
+        img{  
+            width: 100%;
+        }
+    }
+
+    &--left{
+        position: absolute;
+        margin-left: 11.5rem;
+        
+    }
+
+    &--right{
+        position: relative;
+        margin-right: 3rem;
+    }
+
+    &--text{
+        font-size: 0.83rem;
+        color: $black;
+        
+    }
+
+    &--icon{
+        border: 1px solid $gray-700;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        
+
+        @include media-breakpoint-up(md){
+            border-radius: 50%;
+            margin-left: 0.5rem;
+        }
+
+        .fa-user-plus
+        {
+            
+
+            @include media-breakpoint-down(md){
+                padding-left: 0.5rem;
+            }
+        }
+    }
+}
+
+#search{
+    display: none;
+}
+
+

@@ -1,0 +1,29 @@
+@use '../custom' as *;
+
+.card{
+    
+    border: none;
+    
+
+    @include media-breakpoint-up(md){
+        margin: 3rem;
+    }
+
+    &--img{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 3rem;
+
+        @include media-breakpoint-up(md){
+            width: 17rem;
+        }
+
+    }
+
+    &__link{
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 300;
+    }
+}
+

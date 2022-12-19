@@ -1,0 +1,24 @@
+{
+  "name": "firstwebwork",
+  "version": "1.0.0",
+  "description": "cloning microsoft website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "bootstrap",
+    "v5"
+  ],
+  "author": "amarachi",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "autoprefixer": "^10.4.13",
+    "bootstrap": "^5.0.0",
+    "postcss-cli": "^10.1.0"
+  }
+}

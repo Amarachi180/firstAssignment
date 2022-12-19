@@ -1,0 +1,52 @@
+@use '../custom' as *;
+
+.first-section{
+    // position: relative;
+    width: 100%;
+    margin-bottom: 4rem;
+
+
+    img{
+        margin-top: 1.3rem;
+
+        @include media-breakpoint-up(md){
+            width: 100%;
+        }
+    }
+
+    &__button{
+        width: 10rem;
+
+
+        &--one{
+            // background-color: $pink;
+            width: 8rem;
+
+        }
+
+        &--two{
+            position: absolute;
+
+            margin-left: 0rem;
+            text-decoration: none;
+
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+.head-text{
+    margin: .5rem;
+    margin-top: 3rem; 
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+    @include media-breakpoint-up(md){
+        position: absolute;
+        top: 12.5rem;
+        left: 7.5rem;  
+    }
+}

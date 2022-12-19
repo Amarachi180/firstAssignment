@@ -1,0 +1,122 @@
+@use '../custom' as *;
+
+footer{
+    background-color: rgba($gray-200, 0.4);
+}
+
+.footer{
+    
+
+
+    @include media-breakpoint-up(md){
+        margin-left: 4rem;
+    }
+
+    &--down{
+        margin-left: 1.3rem;
+        margin-top: 2rem;
+
+        @include media-breakpoint-up(md){
+            margin-top: 2rem;
+        }
+
+        
+        &__text{
+            font-size: 1rem;
+            font-weight: 500;
+            color: $gray-700;
+            margin-bottom: 0;
+        }
+
+        a{
+            font-size: 0.7rem;
+            text-decoration: none;
+            color: $gray-500;
+        }
+
+        &__link{
+            margin-bottom: 1rem;
+        }
+    }
+
+    &--last{
+       margin-left: .8rem;
+       padding-left: 0rem;
+
+        @include media-breakpoint-up(md){
+            display: flex;
+            justify-items: baseline;
+            width: 22rem;
+        }
+
+        &__first{
+            
+
+            @include media-breakpoint-up(md){
+                display: flex;
+                justify-content: baseline;
+                padding-top: 0.3rem;
+            }
+
+            a{
+                margin-left: 0.5rem;
+                text-decoration: none;
+                color: $black;
+
+
+            }
+
+            i{
+                font-size: 1.2rem;
+                margin-left: 0rem;
+                padding: 0;
+            }
+
+            p{
+                font-size: 0.7rem;
+                margin-left: 0.5rem;
+                display: inline;
+            }
+        }
+
+        &__second{
+            margin-left: .4rem;
+            margin-top: 0.8rem;
+
+            @include media-breakpoint-up(md){
+                margin-left: 1.3rem;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            &--para{
+                font-size: 0.7rem;
+                color: $gray-500;
+            }
+
+        }
+    }
+
+    &--bottom{
+
+
+
+        &__foot{
+            font-size: 0.7rem;
+            text-decoration: none;
+            color: $gray-500; 
+        
+            @include media-breakpoint-up(md){
+                margin-left: 1rem;
+            }
+
+            a{
+                text-decoration: none;
+                color: $gray-500; 
+             }
+        
+        }
+    }
+}

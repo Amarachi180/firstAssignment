@@ -1,0 +1,17 @@
+@use '../custom' as *;
+
+.second-section{
+    margin-top: rem;
+   
+
+    &__text{
+        
+
+
+        @include media-breakpoint-up(md){
+            position: absolute;
+            top: 93rem;
+            left: 11rem;
+        }
+    }
+}

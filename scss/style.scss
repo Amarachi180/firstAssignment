@@ -1,0 +1,9 @@
+@use '../scss/custom' as *;
+
+// IMPORT THE SECTIONS
+@use './sections/navbar' as *;
+@use './sections/first-section.scss' as *;
+@use './sections/second-section.scss' as *;
+@use './sections/third-section.scss' as *;
+@use './sections/fifth-section.scss' as *;
+@use './sections/footer.scss' as *;
